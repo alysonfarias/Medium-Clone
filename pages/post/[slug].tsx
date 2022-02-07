@@ -18,7 +18,7 @@ function Post( {post}: Props) {
 
         <img 
         className='w-full h-40 object-cover'
-        src={urlFor(post.mainImage).url()}>
+        src={urlFor(post.mainImage).url()!}>
         </img>
 
         <article className='max-w-3xl mx-auto p-5'>
