@@ -30,8 +30,11 @@ function Post( {post}: Props) {
             {/* Author */}
             <div className='mt-2 flex items-center'>
                 <img className='h-10 w-10 rounded-full'
-                    src={urlFor(post.author.image)}
-                    alt="imagem blog author " />
+                    src={
+                        urlFor(post.author.image).url() || ''
+                    }
+
+                    alt="imagem blog author" />
 
                 <p className=' mx-2 font-extralight text-sm'>
                     Blog post by {""}
