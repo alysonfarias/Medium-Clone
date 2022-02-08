@@ -1,27 +1,81 @@
-# Next.js + Tailwind CSS Example
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
-## Preview
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+# Medium Clone
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+Medium homepage clone for the purpose of practicing next.js, tailwind css and sanity cms
 
-## Deploy your own
+## View
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+You can view the project by clicking here
+[here](https://medium-clone-alysonfarias.vercel.app/)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+Admin Painel - [here](https://alysonmd.sanity.studio/desk
+)
 
-## How to use
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+
+## Stack
+
+**Front-end:** Next.js, TailwindCSS
+
+**Back-end:** Sanity.IO
+
+
+## How to run
+
+#### Clone the repository into your local
+
+```
+git clone https://github.com/alysonfarias/Medium-Clone.git
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+#### 
+
+
+#### Admin painel 
+
+How posts are consumed through CMS Sanity.Io and if you want with your own cms blog
+
+You will need to have a .env.local file in the project root
+with the following variables:
+
+```
+NEXT_PUBLIC_SANITY_DATASET= dataSetType -> production, developmnt
+NEXT_PUBLIC_SANITY_PROJECT_ID= projectId
+
+```
+
+where you can get it on Sanity.io for  [free here](https://www.sanity.io/get-started)
+and your also gonna need re-config the folder 'dbmedium' where after that
+just go through cd [folderName] to acess painel
+
+```
+sanity start
+```
+
+and now you can see your pannel running on http://localhost:3333
+
+to see the front-end clone
+
+```
+ npm run dev
+```
+
+gonna be running on http://localhost:3000
+
+
+​    
+
+## Feedback
+
+If you have any feedback, please let me know via ramos.alysonfarias@gmail.com
+
+## Useful documentations
+
+[Sanity.IO CMS](https://www.sanity.io/)
+
+[Next.js](https://nextjs.org/docs/getting-started)
+
